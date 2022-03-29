@@ -8,6 +8,162 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
+   <div class="toolbar">
+      <div class="container">
+         <div class="lang__block">
+            <div class="item">Eng</div>
+            <div class="item">Aze</div>
+            <div class="item active">Рус</div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <header class="header">
+         <div class="header__top">
+            <div class="logo">Logo</div>
+            <div class="list">
+               <div class="item">
+                  <p>LOREM IPSUM DOLOR SIT</p>
+                  <p>LOREM IPSUM</p>
+               </div>
+               <div class="item">
+                  <p>LOREM IPSUM DOLOR</p>
+                  <p>LOREM IPSUM DOLOR SIT AMET, <br>CONSECTETUR ADIPISCING</p>
+               </div>
+               <div class="item">
+                  <p>LOREM IPSUM DOLOR</p>
+                  <p>LOREM IPSUM DOLOR SIT</p>
+               </div>
+            </div>
+         </div>
+         <div class="header__menu">
+            <div class="header__mobile-menu">
+               <a href="#" class="menu-btn">
+                  <span></span>
+               </a>
+               <p>Меню</p>
+            </div>
+            <ul class="menu__list">
+               <li class="item">Пункт меню</li>
+               <li class="item">Длинный пункт меню</li>
+               <li class="item">Очень Длинный пункт меню</li>
+               <li class="item">Еще пункт</li>
+               <li class="item">
+                  П. Меню
+                  <ul class="submenu">
+                     <li><a href="#">Зарегистрироваться</a></li>
+                     <li><a href="#">Что такое ортокератология</a></li>
+                     <li><a href="#">История компании Парагон</a></li>
+                     <li><a href="#">10 причин приобрести линзы Парагон для<br>Вашей практики</a></li>
+                     <li><a href="#">Рекомендации по подбору линз Парагон<br>(обучение пользованию)</a></li>
+                     <li><a href="#">Сдать экзамен online</a></li>
+                     <li><a href="#">Связаться с дестрибьютором</a></li>
+                     <li><a href="#">Задать вопрос консульта компании<br>Парагон</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </header>
+
+      <main class="main">
+         <section class="feedback">
+            <div class="feedback__form">
+               <h2>Form</h2>
+               <form action="">
+                  <label for="name">Label #1</label>
+                  <input id="name" type="text" name="name">
+                  <div class="form__wrapper">
+                     <div class="item">
+                        <label for="email">Label #2</label>
+                        <input id="email" type="email" name="email">
+                     </div>
+                     <div class="item">
+                        <label for="tel">Label #3</label>
+                        <input id="tel" type="tel" name="tel">
+                     </div>
+                     <div class="item">
+                        <label for="desc">Label #4</label>
+                        <input id="desc" type="text" name="desc">
+                     </div>
+                     <div class="item">
+                        <label for="time">Label #5</label>
+                        <input id="time" type="text" name="time">
+                     </div>
+                  </div>
+                  <input type="submit" value="Submit" class="submit__btn">
+                </form>
+            </div>
+            <div class="feedback__info">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+               <p><strong>Ut enim ad minim veniam, quis nostrud exercitation</strong></p>
+               <button class="feedback__info-btn">More</button>
+            </div>
+         </section>
+
+         <section class="imgBlock">
+            <div class="item">
+               <div class="img"></div>
+               <div class="imgBlock__info">
+                  <p class="imgBlock__title">LOREM IPSUM DOLOR SIT </p>
+                  <p class="imgBlock__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="img"></div>
+               <div class="imgBlock__info">
+                  <p class="imgBlock__title">LOREM IPSUM </p>
+                  <p class="imgBlock__p">Lorem ipsum dolor sit amet, consectetur elit, sed do </p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="img"></div>
+               <div class="imgBlock__info">
+                  <p class="imgBlock__title">LOREM IPSUM DOLOR </p>
+                  <p class="imgBlock__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem </p>
+               </div>
+            </div>
+         </section>
+
+         <section class="lilBlocks">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+         </section>
+         <div class="more__btn">MORE</div>
+
+         <section class="longBlocks">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+         </section>
+      </main>
+   </div>
+
+   <script>
+      document.querySelector('.header__mobile-menu').addEventListener('click', () => {
+         document.querySelector('.header__menu .menu__list').classList.toggle('active');
+         document.querySelector('.menu-btn').classList.toggle('active');
+      });
+   </script>
+   <script>
+      document.querySelector('.more__btn').addEventListener('click', () => {
+         document.querySelector('.lilBlocks').classList.toggle('active');
+      });
+   </script>
 </body>
 </html>
